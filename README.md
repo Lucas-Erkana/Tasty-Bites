@@ -50,7 +50,6 @@
 - **Remove Foods and Recipes**
 - **Modify Foods and Recipes**
 
-- 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
