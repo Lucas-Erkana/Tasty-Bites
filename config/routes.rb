@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+  get 'errors/not_found'
+  get 'errors/not_accessible'
+  get 'home/index'
+  root "home#index"
   devise_for :users
-  resources :recipes
-  resources :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :recipes do
+    resources :recipe_foods, only: [:new, :create, :destroy, :show, :edit, :update]
+  end
+  resources :foods, only: [:index, :show, :new, :create, :destroy]
+  get "public_recipes", to: "public_recipes#index"
+  get 'not_accessible', to: 'errors#not_accessible'
+  get "general_shopping_list", to: "general_shopping_list#index"
+  get '*path', to: 'errors#not_found'
 end
