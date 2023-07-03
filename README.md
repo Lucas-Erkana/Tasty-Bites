@@ -117,10 +117,10 @@ Install this project with:
 - LinkedIn: [Lucas Erkana](https://www.linkedin.com/in/lucas-erkana/)
 - Frontend Mentor - [@Lucash2022](https://www.frontendmentor.io/profile/Lucash2022)
 
-👤 **Saba Ahmad**
+👤 **Oscar Byiringiro**
 
-- GitHub: [@SabaAhmad404](https://github.com/byiringiroscar)
-- LinkedIn: [Saba Ahmad](https://www.linkedin.com/in/oscar-byiringiro-9baa8313a/)
+- GitHub: [@byiringiroscar](https://github.com/byiringiroscar)
+- LinkedIn: [Oscar Byiringiro](https://www.linkedin.com/in/oscar-byiringiro-9baa8313a/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
