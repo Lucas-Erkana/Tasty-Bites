@@ -1,0 +1,14 @@
+<header class="navbar">
+  <%= image_tag("icons8-repas-64.png", width: 34) %>
+  <nav class="navbar-inner">
+      <ul class="nav">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Foods", foods_path %></li>
+        <li><%= link_to "Recipes", recipes_path %></li>
+        <li><%= link_to "Public Recipe", public_recipes_path %></li>
+      </ul>
+      <% if current_user %>
+      <%= button_to "Log Out", destroy_user_session_path,  method: :delete, class: 'logout-btn' %>
+    <% end %>
+  </nav>
+</header>
