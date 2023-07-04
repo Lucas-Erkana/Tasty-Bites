@@ -1,0 +1,37 @@
+<section class="login-signup-container">
+
+<%= render "devise/shared/back_to_home" %>
+
+<div class="main-cont-logsign">
+
+  <div class="heading-text">
+    <h1>Sign Up</h1>
+  </div>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+
+<div class="column main-login">
+      <%= f.text_field :name, placeholder: "Name*",autofocus: true, autocomplete: "name", class: "input-default" %>
+
+      <%= f.email_field :email, placeholder: "Email*",autofocus: true, autocomplete: "email", class: "input-default" %>
+  
+      <%= f.password_field :password, placeholder: "Password*", autocomplete: "current-password", class: "input-default" %>
+
+      <%= f.password_field :password_confirmation, placeholder: "Password Confirmation*", autocomplete: "current-password", class: "input-default" %>
+
+    <div class="login-btn-container ">
+
+      <%= f.submit "Join Us Now !", class:"btn-bg-transparent" %>
+    <% end %>
+    
+    <%= render "devise/shared/links", class: "btn-text" %>
+    </div>
+
+
+</div>
+
+</div>
+
+</section>
