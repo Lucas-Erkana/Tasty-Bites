@@ -13,30 +13,25 @@
 
   <div>
     <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, placeholder: "Allassane ..", class: "input-default" %>
   </div>
 
   <div>
     <%= form.label :measurement_unit, style: "display: block" %>
-    <%= form.text_field :measurement_unit %>
+    <%= form.text_field :measurement_unit, placeholder: "eg: kg, grams, unit ..", class: "input-default" %>
   </div>
 
   <div>
     <%= form.label :price, style: "display: block" %>
-    <%= form.text_field :price %>
+    <%= form.text_field :price, placeholder: "eg: 10 '$'", class: "input-default" %>
   </div>
 
   <div>
     <%= form.label :quantity, style: "display: block" %>
-    <%= form.number_field :quantity %>
+    <%= form.number_field :quantity, placeholder: "30 'gram'", class: "input-default" %>
   </div>
-
+  
   <div>
-    <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit class: "btn-bg-red-big" %>
   </div>
 <% end %>

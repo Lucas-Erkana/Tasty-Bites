@@ -1,14 +1,28 @@
-<p style="color: green"><%= notice %></p>
+<%= render 'layouts/navbar' %> 
 
-<h1>Foods</h1>
-
-<div id="foods">
-  <% @foods.each do |food| %>
-    <%= render food %>
-    <p>
-      <%= link_to "Show this food", food %>
-    </p>
-  <% end %>
+<div class="max-width flex-center">
+  <div class="row food-heading">
+    <%= render partial: "shared/heading_text" %>
+    <%= button_to "Add Food", new_food_path, method: :get, class:"btn-bg-red-big" %>
+  </div>
 </div>
 
-<%= link_to "New food", new_food_path %>
+<p class="notice"><%= notice %></p>
+
+<div class="max-width flex-center food-table-wrapper">
+  <table class="table">
+    <tr>
+      <th>Food</th>
+      <th>Quantity</th>
+      <th>Measurement unit</th>
+      <th>Unit price</th>
+      <th>Actions</th>
+    </tr>
+    <% @foods.each do |food| %>
+      <%= render food %>
+    <% end %>
+    <%= render partial: "shared/empty_list", locals: {list: @foods} %>
+
+  </table>
+</div>
+
