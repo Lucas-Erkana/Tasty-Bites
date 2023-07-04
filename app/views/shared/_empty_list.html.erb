@@ -1,0 +1,12 @@
+<% if list.length == 0 %>
+  <tr>
+    <td colspan="10">
+      <div class="flex-center column empty-list">
+        <p>Empty list of elements</p>
+        <p>Add a new element now !</p>
+        <%= button_to "Add food", new_food_path, method: :get, class:"btn-bg-red-big" %>
+      </div>
+    </td>
+  </tr>
+
+<% end %>
