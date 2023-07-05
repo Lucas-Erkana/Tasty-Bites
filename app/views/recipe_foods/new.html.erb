@@ -1,0 +1,44 @@
+<%= render 'layouts/navbar' %> 
+
+<div class="row btn-back">
+  <%= image_tag("icons8-moins-que-100.png", width: 34) %>
+  <%= link_to "Back", "/recipes/#{@recipe.id}" %>
+</div>
+
+<div class="add-form-margin">
+
+  <h1>Add Ingrediants</h1>
+
+  <%= form_with(model: @recipe_food, url: "/recipes/#{@recipe.id}/recipe_foods/")  do |form| %>
+    <% if @recipe_food.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(@recipe_food.errors.count, "error") %> prohibited this @recipe_food from being saved:</h2>
+
+        <ul>
+          <% @recipe_food.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div>
+    <%= form.label :name, "Select a food:" %><br/>
+    <%= form.select :id, 
+      options_for_select(@foods.map { |f| [f.name, f.id] }), 
+      {}, { class: "input-default" } %>
+    </div>
+
+    <div>
+      <%= form.label :quantity, placeholder: "10 'kg'..", style: "display: block" %>
+      <%= form.number_field :quantity, class: "input-default" %>
+    </div>
+
+
+    <div>
+      <%= form.submit class: "btn-bg-red-big" %>
+    </div>
+  <% end %>
+</div>
+
+<div class="bg-plate-reversed"></div>
