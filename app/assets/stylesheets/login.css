@@ -1,0 +1,46 @@
+.login-signup-container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/assets/heading_right.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 2%;
+}
+
+.main-login {
+  width: 25%;
+  margin: 5% 0 2% 0;
+  gap: 0.8rem;
+}
+
+.login-signup-container a {
+  font-weight: 600;
+  color: var(--color-text-black);
+  text-decoration: underline;
+}
+
+.login-btn-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.back-to-home {
+  display: flex;
+  align-items: center;
+  margin: 1% 0 4%;
+  cursor: pointer;
+}
+
+.back-to-home a {
+  text-decoration: none;
+  color: var(--color-text-red);
+  font-size: 1.1rem;
+}
+
+.main-cont-logsign {
+  margin: 8% 5%;
+}

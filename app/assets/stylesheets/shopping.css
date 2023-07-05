@@ -1,0 +1,12 @@
+.shopping h2 {
+  color: var(--color-text-black);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.shopping .detail {
+  padding-left: 24px;
+  padding-right: 24px;
+  justify-content: space-evenly;
+  margin-bottom: 24px;
+}
