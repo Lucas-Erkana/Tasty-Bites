@@ -22,6 +22,7 @@
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 25px;
 }
 
 .logout-btn {
@@ -34,7 +35,12 @@ a {
   background-color: var(--color-primary);
 }
 
+.logout-btn:hover {
+  background-color: red;
+  border-radius: 25px;
+}
+
 .navbar img {
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
 }
