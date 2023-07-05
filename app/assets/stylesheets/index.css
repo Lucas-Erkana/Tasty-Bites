@@ -7,11 +7,12 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
 
-  --color-primary:#FFBD59;
-   /* #fe3333; */
-  --color-primary-light: #FFBD59;
-  --color-text-orange:#FFBD59;
-  --color-text-red:#c00; 
+  --color-primary: #ffbd59;
+
+  /* #fe3333; */
+  --color-primary-light: #ffbd59;
+  --color-text-orange: #ffbd59;
+  --color-text-red: #c00;
   --color-text-black: #353333;
   --color-text-gray-light: #535151;
   --color-text-gray: #797979;
