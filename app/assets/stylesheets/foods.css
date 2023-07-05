@@ -1,0 +1,13 @@
+.food-heading {
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80%;
+}
+
+.food-table-wrapper {
+  margin-top: 60px;
+}
+
+.food-table-wrapper .table {
+  width: 80%;
+}
