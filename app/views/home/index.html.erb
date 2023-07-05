@@ -4,11 +4,7 @@
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Foods", foods_path %></li>
         <li><%= link_to "Recipes", recipes_path %></li>
-        <%
-=begin%>
- <li><%= link_to "Public Recipe", public_recipes_path %></li> 
-<%
-=end%>
+        <li><%= link_to "Public Recipe", public_recipes_path %></li>
       </ul>
       <% if current_user %>
       <%= button_to "Log Out", destroy_user_session_path,  method: :delete, class: 'logout-btn' %>
@@ -36,9 +32,7 @@
   </div>
 </section>
 
-<%
-=begin%>
- <section class="flex-center column public-recipes">
+<section class="flex-center column public-recipes">
   <h2>Public Recipes</h2>
   <ul class="max-width flex-center column">
     <% @public_recipes.each do |recipe| %>
@@ -47,11 +41,9 @@
       </li>
     <% end %>
   </ul>
-</section> 
-<%
-=end%>
+</section>
 
 <footer class="max-width row footer">
   <h6>All right reserved</h6>
-  <h6>Lucas & Oscar</h6>
+  <h6><a href="https://github.com/Lucash2022" target="_blank">Lucas</a> & <a href="https://github.com/byiringiroscar" target="_blank">Oscar</a></h6>
 </footer>
