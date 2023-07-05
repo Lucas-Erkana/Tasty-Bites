@@ -9,7 +9,8 @@ class RecipesController < ApplicationController
 
   # GET /recipes/1 or /recipes/1.json
   def show
-    @recipe = Recipe.includes(:recipe_food).find(params[:id])
+    #@recipe = Recipe.includes(:recipe_food).find(params[:id])
+    @recipe = Recipe.find(params[:id])
     @ingredients = @recipe.recipe_food.where(recipe: @recipe)
 
     redirect_to '/not_accessible' if (cannot? :manage, @recipe) && @recipe.public == false
