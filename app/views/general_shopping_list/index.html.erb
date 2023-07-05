@@ -1,0 +1,45 @@
+<%= render 'layouts/navbar' %> 
+
+<div class="max-width flex-center">
+  <div class="row food-heading">
+    <%= render partial: "shared/heading_text" %>
+  </div>
+</div>
+
+
+<div class="max-width flex-center column shopping">
+  <h2>Shopping List</h2>
+  <div class="row max-width detail">
+    <p>
+      Amount of food items to buy: <%= @shop_list.length %>
+    </p>
+    <p>
+      Total value of food neeeded: <%= @total_price %>
+    </p>
+  </div>
+
+  <table class="table">
+    <tr>
+      <th>Food</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+    <% @shop_list.each do |recipe_food| %>
+      <tr>
+        <td><%= recipe_food.name %></td>
+        <td><%= recipe_food.quantity %></td>
+        <td><%= recipe_food.price %></td>
+      </tr>
+    <% end %>
+
+    <% if @shop_list.length == 0 %>
+      <tr>
+        <td colspan="10">
+          <div class="flex-center column empty-list">
+            <p>Empty list of elements</p>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>

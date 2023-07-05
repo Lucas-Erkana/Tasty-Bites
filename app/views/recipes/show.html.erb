@@ -1,5 +1,4 @@
-<%= render 'layouts/navbar' %>
-
+<%= render 'layouts/navbar' %> 
 
 <section class="recipe-details-container">
   <div class="heading-text">
@@ -7,29 +6,23 @@
   </div>
 <div class="details-and-public-togl">
 
-
 <p class="notice"><%= notice %></p>
 
-
 <div class="recipe-details">
-
 
   <h2 class="main-h2">
     Preparation Time: <%= @recipe.preparation_time %> hour
   </h2>
- 
+  
   <h2 class="main-h2">
     Cooking Time: <%= @recipe.cooking_time %> hour
   </h2>
-
 
   <p class="main-p">
   <%= @recipe.description %>
 </p>
 
-
 </div>
-
 
 <% if can? :destroy , @recipe %>
 <%= form_for @recipe, method: :patch do |f| %>
@@ -44,9 +37,7 @@
 <% end %>
 <% end %>
 
-
 </div>
-
 
 <% if can? :destroy , @recipe %>
 <div class="btn-group row">
@@ -58,7 +49,6 @@
 </a>
 </div>
 <% end %>
-
 
 <table class="table">
     <tr>
@@ -84,10 +74,7 @@
     <% end %>
     <%= render partial: "shared/empty_list", locals: {list: @recipe.recipe_food} %>
 
-
 </table>
-
-
 
 
 </section>
