@@ -76,3 +76,34 @@ input:checked + .slider::before {
   align-items: center;
   height: 28px;
 }
+
+@media screen and (max-width: 768px) {
+  .switch {
+    width: 50px;
+    height: 25px;
+  }
+
+  .slider::before {
+    height: 22px;
+    width: 22px;
+    left: 2px;
+    bottom: 0.8px;
+  }
+
+  .recipes .txt-list-recipes {
+    margin-bottom: 16px;
+  }
+
+  .recipe-details-container .table th:first-child {
+    width: 35%;
+    min-width: 35%;
+  }
+
+  .recipe-details-container .btns {
+    gap: 0.8rem;
+  }
+
+  .btns button {
+    height: 24px;
+  }
+}

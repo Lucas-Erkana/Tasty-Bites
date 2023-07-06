@@ -16,7 +16,7 @@
   font-weight: bolder;
 }
 
-.nav :hover {
+.nav:hover {
   background: #ffbd59;
   font-size: 30px;
   font-weight: bolder;
@@ -28,16 +28,16 @@
 
 .home-wrapper {
   position: relative;
-  height: 100%;
   min-height: 800px;
   align-items: flex-end;
 }
 
 .home .heading-text,
 .not-found .heading-text {
-  max-width: 500px;
-  margin-top: 250px;
-  margin-right: 10%;
+  max-width: 90%; /* Adjusted max-width for responsiveness */
+  margin-top: 10%; /* Adjusted margin-top for responsiveness */
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .home .heading-text h1 {
@@ -47,4 +47,17 @@
 
 .home .heading-text a {
   margin-right: 16px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .home-wrapper {
+    min-height: auto; /* Adjusted min-height for responsiveness */
+  }
+
+  .home .heading-text,
+  .not-found .heading-text {
+    margin-top: 20%; /* Adjusted margin-top for smaller screens */
+    text-align: center; /* Center-align the text */
+  }
 }

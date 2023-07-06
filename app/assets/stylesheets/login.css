@@ -44,3 +44,26 @@
 .main-cont-logsign {
   margin: 8% 5%;
 }
+
+@media screen and (max-width: 768px) {
+  .login-signup-container {
+    background-position: center;
+  }
+
+  .main-login {
+    width: 90%;
+    margin: 5% auto 2%;
+  }
+
+  .back-to-home {
+    margin: 1% 0 2%;
+  }
+
+  .back-to-home a {
+    font-size: 1rem;
+  }
+
+  .main-cont-logsign {
+    margin: 5% auto;
+  }
+}

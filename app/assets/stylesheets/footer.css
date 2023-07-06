@@ -6,3 +6,12 @@
   color: white;
   font-size: 1.4rem;
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px;
+  }
+}
