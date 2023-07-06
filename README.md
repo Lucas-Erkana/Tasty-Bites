@@ -50,9 +50,7 @@
 - **Remove Foods and Recipes**
 - **Modify Foods and Recipes**
 
-- 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -140,7 +138,6 @@ Install this project with:
 - [ ] **Add Food Photos**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- CONTRIBUTING -->
 
