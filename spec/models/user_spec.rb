@@ -1,0 +1,1 @@
+rspec spec/models/recipe_spec.rb
