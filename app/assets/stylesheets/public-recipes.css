@@ -1,0 +1,24 @@
+.public-recipes h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: var(--color-text-black);
+}
+
+.public-recipes li {
+  width: 60%;
+}
+
+.public-recipe {
+  justify-content: space-between;
+}
+
+.public-recipe .btns {
+  justify-content: space-between;
+}
+
+.public-recipe .btns a,
+.public-recipe .btns button {
+  margin-right: 16px;
+}

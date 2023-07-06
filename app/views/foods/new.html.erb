@@ -1,0 +1,14 @@
+<h1>New Food</h1>
+
+<div class="row btn-back">
+  <%= image_tag("icons8-moins-que-100.png", width: 34) %>
+  <%= link_to "Back", foods_path %>
+</div>
+
+<div class="add-form-margin">
+  <h1>New food</h1>
+  <%= render "form", food: @food %>
+</div>
+
+<div class="bg-plate-reversed"></div>
+

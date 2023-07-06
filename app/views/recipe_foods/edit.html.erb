@@ -1,0 +1,23 @@
+<div class="row btn-back">
+  <%= image_tag("icons8-moins-que-100.png", width: 34) %>
+  <%= link_to "Back", "/recipes/#{@recipe.id}" %>
+</div>
+
+<div class="column add-form-margin">
+  <h1>Edit Ingredient</h1>
+  <%= form_with model: @recipe_food, url: recipe_recipe_food_path(recipe_id: @recipe_food.recipe_id, id: @recipe_food.id), method: :patch do |f| %>
+    <%= f.hidden_field :id, value: @recipe_food.id %>
+    <%= f.hidden_field :recipe_id, value: @recipe_food.recipe_id %>
+
+    <%= f.label :food_id, "Select Ingredient" , style: "display: block" %>
+
+    <%= f.select :food_id, @foods.map { |food| [food.name, food.id] }, {}, { class: "input-default" } %>
+
+    <%= f.label :food_id, "Quantity" , style: "display: block" %>
+    <%= f.number_field :quantity, placeholder: "eg: 30 'gram'", class: "input-default" %>
+    <br/>
+    <%= f.submit "Update Ingredient", class: "btn-bg-red-big" %>
+  <% end %>
+</div>
+
+<div class="bg-plate-reversed"></div>

@@ -1,0 +1,12 @@
+<%= render 'layouts/navbar' %> 
+
+<section class="flex-center column public-recipes">
+  <h2>Public Recipes</h2>
+  <ul class="max-width flex-center column">
+    <% @public_recipes.each do |recipe| %>
+      <li class="row">
+        <%= render partial:"public_recipes/public_recipe", locals: {recipe: recipe} %>
+      </li>
+    <% end %>
+  </ul>
+</section>

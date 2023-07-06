@@ -1,0 +1,37 @@
+<%= form_with(model: food) do |form| %>
+  <% if food.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(food.errors.count, "error") %> prohibited this food from being saved:</h2>
+
+      <ul>
+        <% food.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name, placeholder: "Allassane ..", class: "input-default" %>
+  </div>
+
+  <div>
+    <%= form.label :measurement_unit, style: "display: block" %>
+    <%= form.text_field :measurement_unit, placeholder: "eg: kg, grams, unit ..", class: "input-default" %>
+  </div>
+
+  <div>
+    <%= form.label :price, style: "display: block" %>
+    <%= form.text_field :price, placeholder: "eg: 10 '$'", class: "input-default" %>
+  </div>
+
+  <div>
+    <%= form.label :quantity, style: "display: block" %>
+    <%= form.number_field :quantity, placeholder: "30 'gram'", class: "input-default" %>
+  </div>
+  
+  <div>
+    <%= form.submit class: "btn-bg-red-big" %>
+  </div>
+<% end %>

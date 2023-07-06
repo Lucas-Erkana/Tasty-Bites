@@ -1,0 +1,34 @@
+<%= render 'layouts/navbar' %> 
+
+<section class="flex-center column public-recipes recipes">
+  <div class="max-width flex-center">
+    <div class="row food-heading">
+      <%= render partial: "shared/heading_text" %>
+      <%= button_to "Add Recipe", new_recipe_path, method: :get, class:"btn-bg-red-big" %>
+    </div>
+  </div>
+
+  <p class="notice"><%= notice %></p>
+  <p class="btn-text txt-list-recipes">List Recipes</p>
+  <ul class="max-width flex-center column">  
+    <% @recipes.each do |recipe| %>
+      <li class="card row-wrap public-recipe">  
+        <div class="head">
+          <a href=<%= "recipes/#{recipe.id}" %> class="no-styling">
+            <h3><%= recipe.name %></h3>
+          </a>
+          <div class="row btns">
+            <%= button_to "Remove", recipe, method: :delete, class: 'no-styling btn-text color-red bold' %>
+            <a href=<%= "recipes/#{recipe.id}" %> class="no-styling btn-text color-red">
+              View More
+            </a>
+          </div>
+        </div>
+        <a href=<%= "recipes/#{recipe.id}" %> class="no-styling text-description">
+          <p class="text-description"><%= recipe.description %></p>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</section>
+

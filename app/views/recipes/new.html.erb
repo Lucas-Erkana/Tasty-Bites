@@ -1,0 +1,11 @@
+<div class="row btn-back">
+  <%= image_tag("icons8-moins-que-100.png", width: 34) %>
+  <%= link_to "Back to recipes", recipes_path %>
+</div>
+
+<div class="add-form-margin">
+  <h1>New Recipe</h1>
+  <%= render "form", recipe: @recipe %>
+</div>
+
+<div class="bg-plate-reversed"></div>

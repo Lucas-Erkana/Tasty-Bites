@@ -1,0 +1,9 @@
+<tr id="<%= dom_id food %>">
+    <td><%= food.name %></td>
+    <td><%= food.measurement_unit %></td>
+    <td><%= food.price %></td>
+    <td>
+      <%= button_to "Remove", food, method: :delete, class: "no-styling btn-text color-red bold" %>
+    </td>
+
+</tr>
