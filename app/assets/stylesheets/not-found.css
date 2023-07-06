@@ -19,18 +19,3 @@
 #heading-red {
   color: var(--color-text-red);
 }
-
-@media screen and (max-width: 768px) {
-  .not-found {
-    padding: 24px 5%;
-    justify-content: center;
-  }
-
-  .right {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    text-align: center;
-    align-items: center;
-  }
-}

@@ -304,33 +304,3 @@ body {
     opacity: 0.2;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .add-form-margin {
-    margin-top: 40px;
-    margin-left: 0;
-  }
-
-  .heading-text h1 {
-    font-size: 2.5rem;
-  }
-
-  .table {
-    width: 100%;
-    min-width: 100%;
-  }
-
-  .table th:first-child,
-  .table td:first-child {
-    padding-left: 16px;
-  }
-
-  .bg-plate,
-  .bg-plate-reversed {
-    height: 300px;
-  }
-
-  .main-h1 {
-    font-size: 3rem;
-  }
-}

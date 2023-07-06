@@ -11,20 +11,3 @@
 .food-table-wrapper .table {
   width: 80%;
 }
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  .food-heading {
-    width: 100%; /* Adjust the width to occupy full width */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-  }
-
-  .food-table-wrapper {
-    margin-top: 40px; /* Reduce the top margin for smaller screens */
-  }
-
-  .food-table-wrapper .table {
-    width: 100%; /* Adjust the width to occupy full width */
-  }
-}

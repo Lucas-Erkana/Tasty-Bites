@@ -22,30 +22,3 @@
 .public-recipe .btns button {
   margin-right: 16px;
 }
-
-@media screen and (max-width: 768px) {
-  .public-recipes h2 {
-    font-size: 2.5rem;
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-
-  .public-recipes li {
-    width: 100%;
-  }
-
-  .public-recipe {
-    flex-direction: column;
-  }
-
-  .public-recipe .btns {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .public-recipe .btns a,
-  .public-recipe .btns button {
-    margin-right: 0;
-    margin-bottom: 12px;
-  }
-}

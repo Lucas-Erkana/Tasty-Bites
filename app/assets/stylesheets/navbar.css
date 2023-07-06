@@ -68,38 +68,10 @@ a {
   0% {
     opacity: 0;
   }
-
   50% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbar {
-    width: 90%;
-    padding: 1% 0;
-  }
-
-  .nav li {
-    margin-right: 1rem;
-    font-size: 1.6rem;
-  }
-
-  .logout-btn {
-    font-size: 1.6rem;
-    padding: 2px 8px;
-  }
-
-  .navbar img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .current-user {
-    font-size: 24px;
   }
 }

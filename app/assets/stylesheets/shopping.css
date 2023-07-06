@@ -10,17 +10,3 @@
   justify-content: space-evenly;
   margin-bottom: 24px;
 }
-
-@media screen and (max-width: 768px) {
-  .shopping h2 {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-
-  .shopping .detail {
-    padding-left: 16px;
-    padding-right: 16px;
-    justify-content: space-between;
-    margin-bottom: 16px;
-  }
-}
