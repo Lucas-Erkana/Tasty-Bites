@@ -53,6 +53,13 @@
 - 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- <a href="https://rails-00bb.onrender.com/" target="_blank">Tasty Bites Live</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -133,6 +140,7 @@ Install this project with:
 - [ ] **Add Food Photos**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- CONTRIBUTING -->
 
