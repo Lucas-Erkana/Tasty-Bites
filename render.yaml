@@ -4,7 +4,7 @@ database:
 
 services:
   - type: web
-    name: "RAILS_MAX_THREADS"
+    name: rails
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: bundle exec rails s
