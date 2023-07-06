@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'errors/not_found'
-  get 'errors/not_accessible'
-  get 'home/index'
   root "home#index"
   devise_for :users
   resources :recipes do
