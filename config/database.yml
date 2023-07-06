@@ -4,10 +4,8 @@ default: &default
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   url: <%= ENV['DATABASE_URL'] %>
-  host: localhost
-  port: 5432
-  username: postgres
-  password: Admin123
+ 
+  
 
 development:
   <<: *default
@@ -21,4 +19,4 @@ test:
 
 production:
   <<: *default
-  database: tasty-bites_production
+  url: <%= ENV['DATABASE_URL'] %>
