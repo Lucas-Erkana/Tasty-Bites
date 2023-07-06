@@ -4,14 +4,14 @@ database:
 
 services:
   - type: web
-    name: ("RAILS_MAX_THREADS"
+    name: "RAILS_MAX_THREADS"
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: bundle exec rails s
     envVars:
         - key: RAILS_MASTER_KEY
           sync: false
-        - KEY: 'DATABASE_URL'
+        - KEY: DATABASE_URL
           fromDatabase:
               name: postgres
               porperty: connectionString
