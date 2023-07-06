@@ -3,18 +3,20 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  url: <%= ENV['DATABASE_URL'] %>
- 
+  host: localhost
+  port: 5432
+  username: postgres
+  password: Admin123
   
 
 development:
   <<: *default
-  database: tasty-bites_development
+  database: tastybites_development
 
 
 test:
   <<: *default
-  database: tasty-bites_test
+  database: tastybites_test
 
 
 production:
