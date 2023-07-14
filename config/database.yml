@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: tasty-bites_production
-  username: tasty-bites
-  password: <%= ENV["FOODONRAILS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
