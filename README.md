@@ -82,7 +82,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd your-folder
-  https://github.com/Lucash2022/Blog_App.git
+  https://github.com/Lucas-Erkana/Blog_App.git
 ```
 
 ### Install
@@ -117,10 +117,10 @@ Install this project with:
 
 👤 **Lucas Erkana**
 
-- GitHub: [@Lucash2022](https://github.com/Lucash2022)
+- GitHub: [@Lucas-Erkana](https://github.com/Lucas-Erkana)
 - Twitter: [@Lucas_David_22](https://twitter.com/@Lucas_David_22)
 - LinkedIn: [Lucas Erkana](https://www.linkedin.com/in/lucas-erkana/)
-- Frontend Mentor - [@Lucash2022](https://www.frontendmentor.io/profile/Lucash2022)
+- Frontend Mentor - [@Lucas-Erkana](https://www.frontendmentor.io/profile/Lucas-Erkana)
 
 👤 **Oscar Byiringiro**
 
@@ -145,7 +145,7 @@ Install this project with:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/lucash2022/Blog-app/issues).
+Feel free to check the [issues page](https://github.com/Lucas-Erkana/Blog-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
