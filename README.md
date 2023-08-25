@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
-<h1> Blog App</h1>
+<h1>Tasty Bites</h1>
+![tasybites](https://github.com/Lucas-Erkana/Tasty-Bites/assets/41428579/9496a723-a14a-43ef-b39a-4a7c77715444)
 
 
 # 📗 Table of Contents
