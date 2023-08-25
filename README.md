@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <h1>Tasty Bites</h1>
-![tasybites](https://github.com/Lucas-Erkana/Tasty-Bites/assets/41428579/9496a723-a14a-43ef-b39a-4a7c77715444)
+<img src="app/assets/images/icons8-repas-64.png"/>
 
 
 # 📗 Table of Contents
