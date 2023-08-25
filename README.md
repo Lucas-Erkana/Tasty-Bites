@@ -1,7 +1,8 @@
 <a name="readme-top"></a>
-<h1>Tasty Bites</h1>
-<img src="app/assets/images/icons8-repas-64.png"/>
-
+<div align="center">
+  <h1>Tasty Bites</h1>
+  <img src="app/assets/images/icons8-repas-64.png"/>
+</div>
 
 # 📗 Table of Contents
 
