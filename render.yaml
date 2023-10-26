@@ -1,0 +1,18 @@
+databases:
+  - name: tastybites
+    databaseName: tastybites
+    user: tastybites_user
+
+services:
+  - type: web
+    name: tasty-bites
+    runtime: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: tastybites
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
